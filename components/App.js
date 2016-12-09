@@ -1,16 +1,15 @@
 import React from 'react';
+import TextInput from './TextInput';
 
 class App extends React.Component {
 	clickHandle(){
-		console.log('lolol')
+		console.log('Wooo!')
 	}
 	render() {
 		return(
 			<div>
-			 Hello from React!
-			 	<div>
-			 		<button onClick = {this.clickHandle.bind(this)}>Woo!</button>
-			 	</div>
+			 Hello from React(App Component)!
+			 <TextInput />
 			 </div>
 			)
 	}
