@@ -7,9 +7,13 @@ class TodoList extends Component {
 	render() {
 
 		return (
-			<div>
-				TodoList Component
-			</div>
+			<ul>
+				{
+				this.props.todos.map((todoItem)=>{
+						return <li key={todoItem.id}>{todoItem.text}</li>
+					})
+				}
+			</ul>
 		)
 	}
 }
