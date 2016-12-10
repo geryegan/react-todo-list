@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import TextDisplay from './TextDisplay';
+import TodoList from './TodoList';
 
-class TextInput extends Component {
+
+class TodoInput extends Component {
+
 	constructor(props){
 		super(props)
 		this.state = {
-			inputText: 'text'
+			inputText: ''
 		}
 	}
 
@@ -16,16 +18,19 @@ class TextInput extends Component {
 	}
 
 	render() {
+
 		return (
 			<div>
 				<input 
 				type='text'
 				value={this.state.inputText}
-				onChange={this.handleChange.bind(this)}/>
-				<TextDisplay text={this.state.inputText} />
+				onChange={this.handleChange.bind(this)}
+				/>
+				<button>Submit</button>
+				<TodoList/>
 			</div>
 		)
 	}
 }
 
-export default TextInput;
+export default TodoInput;

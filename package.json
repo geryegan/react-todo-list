@@ -25,6 +25,9 @@
     "webpack-hot-middleware": "^2.13.2"
   },
   "devDependencies": {
-    "babel-preset-react-hmre": "^1.1.1"
+    "babel-preset-react-hmre": "^1.1.1",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.3.1"
   }
 }

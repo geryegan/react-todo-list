@@ -1,5 +1,5 @@
 import React from 'react';
-import TextInput from './TextInput';
+import TodoInput from './TodoInput';
 
 class App extends React.Component {
 	clickHandle(){
@@ -8,8 +8,8 @@ class App extends React.Component {
 	render() {
 		return(
 			<div>
-			 Hello from React(App Component)!
-			 <TextInput />
+			 ToDo List
+			  <TodoInput />
 			 </div>
 			)
 	}
