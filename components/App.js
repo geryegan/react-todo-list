@@ -14,7 +14,7 @@ class App extends React.Component {
 			<div>
 			 ToDo List
 			  <TodoInput dispatch={this.props.dispatch}/>
-			  <TodoList todos={this.props.todos}/>
+			  <TodoList dispatch={this.props.dispatch} todos={this.props.todos}/>
 			 </div>
 			)
 	}
