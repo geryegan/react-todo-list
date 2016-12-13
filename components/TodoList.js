@@ -11,7 +11,7 @@ class TodoList extends Component {
 			<ul>
 				{
 				this.props.todos.map((todoItem)=>{
-						return <TodoItem dispatch={this.props.dispatch} key={todoItem.id} todo={todoItem}/>
+						return <TodoItem completeTodo={this.props.completeTodo} deleteTodo={this.props.deleteTodo} key={todoItem.id} todo={todoItem}/>
 					})
 				}
 			</ul>

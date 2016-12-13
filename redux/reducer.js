@@ -30,6 +30,15 @@ let reducer = function(state, action){
 			})
 
 
+		case 'CREATE_USER_ID':
+			console.log('in reducer')
+			return Object.assign({}, state, {
+				user: {
+					username: state.user.username,
+					id: action.id
+				}
+			})
+
 		default:
 			return state;
 	}
